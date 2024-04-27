@@ -1,9 +1,27 @@
+# Here we define the backend configuration for the terraform cloud workspace 
 
+# terraform {
+#   backend "remote" {
+#     organization = "mohssensadeq"
+
+#     workspaces {
+#       name = "terraform"
+#     }
+#   }
+  
+
+# required_providers {
+#     aws = {
+#       source  = "hashicorp/aws"
+#       version = "~> 3.0"
+#     }
+#   }
+# }
 
 
 provider "aws" {
   region = "us-east-1"
-  profile = "default"
+profile = "default"
 }
 
 
